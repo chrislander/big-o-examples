@@ -17,8 +17,7 @@ class bigOExamples {
 
     public static function elementContainsStr($list) {
         foreach ($list as $key => $value) {
-            if (is_int($value))
-                return true;
+            if (is_int($value)) return true;
         }
         return false;
     }
@@ -31,11 +30,9 @@ class bigOExamples {
             for ($j = 0; count($j); $j++) {
 
                 // Don't compare with self
-                if ($i === $j)
-                    continue;
+                if ($i === $j) continue;
 
-                if ($list[$i] === $list[$j])
-                    return true;
+                if ($list[$i] === $list[$j]) return true;
             }
         }
         return false;
